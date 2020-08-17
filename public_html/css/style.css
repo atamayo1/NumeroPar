@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 ago. 2020, 00:11:30
+    Author     : anthony
+*/
+body{
+    font-family: "Arial";
+    color: #fff;
+    background-image: url('../img/screen-4.jpg');
+    /*background-color: #000;*/
+}
+
+button{
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+button:hover{
+    background-color: rgba(165, 42, 42, .8);
+    cursor: pointer;
+}
