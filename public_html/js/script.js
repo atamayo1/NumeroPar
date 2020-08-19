@@ -7,8 +7,9 @@
     Created on : 17 ago. 2020, 00:11:30
     Author     : anthony
 */
+document.write("Programa para determinar que un número es par <br>");
 function showPar(){
-    var num = prompt("Escribe tu numero para evaluar si es par");
+    var num = parseInt(prompt("Escribe tu numero para evaluar si es par"));
     if(num>0){
         if(num % 2 === 0){  
          document.write(`<h1>El número ${num} es par</h1>`);   
@@ -18,14 +19,14 @@ function showPar(){
      }else{
          while(num<=0){
              alert("Ingrese un número mayor a 0");
-             num = prompt("Escribe tu numero para evaluar si es par");
+             num = parseInt(prompt("Escribe tu numero para evaluar si es par"));
          }
      }
      document.write("<hr>");
 }
 function showPares(){
-    var num = prompt("Escribe tu numero 1 para evaluar el intervalo");
-    var num_two = prompt("Escribe tu numero 2 para evaluar el intervalo");
+    var num = parseInt(prompt("Escribe tu numero 1 para evaluar el intervalo"));
+    var num_two = parseInt(prompt("Escribe tu numero 2 para evaluar el intervalo"));
     if(num>0 && num_two>0){
         for(num; num<=num_two; num++){
             if(num % 2 === 0){  
@@ -35,13 +36,12 @@ function showPares(){
      }else{
          while(num<=0){
              alert("Ingrese un número mayor a 0");
-             num = prompt("Escribe tu numero 1 para evaluar el intervalo");
-             num_two = prompt("Escribe tu numero 2 para evaluar el intervalo");
+             num = parseInt(prompt("Escribe tu numero 1 para evaluar el intervalo"));
+             num_two = parseInt(prompt("Escribe tu numero 2 para evaluar el intervalo"));
          }
      }
      document.write("<hr>");
  }
- 
  function reload(){
      location.reload();
  }
@@ -54,8 +54,8 @@ function showPares(){
      document.write('<button onclick="reload()">Evaluar en un intervalo de números, los números pares</button>');
  }
  
- this.showPar(); 
- this.showButtonShowPar();
+ //this.showPar(); 
+ //this.showButtonShowPar();
  
  this.showPares();
  this.showButtonShowPares();
