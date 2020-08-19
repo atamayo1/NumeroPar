@@ -11,6 +11,8 @@ body{
     font-family: "Arial";
     color: #fff;
     background-image: url('../img/screen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     /*background-color: #000;*/
 }
 
